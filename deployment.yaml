@@ -4,6 +4,7 @@ metadata:
   name: spring-boot-gke
   labels:
     app: spring-boot
+    version: v1
 spec:
   selector:
     matchLabels:
