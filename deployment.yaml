@@ -8,7 +8,7 @@ spec:
   selector:
     matchLabels:
       app: spring-boot
-  replicas: 2
+  replicas: 1
   template:
     metadata:
       labels:
@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: spring-boot-gke
-          image:  gcr.io/anthos-poc-252613/spring-boot-gke:latest
+          image:  gcr.io/anthos-poc-252613/spring-boot-gke:v1
           imagePullPolicy: Always
           readinessProbe:
             httpGet:
