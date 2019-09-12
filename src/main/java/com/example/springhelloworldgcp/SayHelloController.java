@@ -7,11 +7,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/hellov1")
+@RequestMapping("/hellov2")
 public class SayHelloController {
 
     @GetMapping
     public String getMessage() {
-        return String.format("This is hello from pod 1");
+        return String.format("This is hello from pod 2");
     }
 }

@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: spring-boot-gke
-          image:  gcr.io/anthos-poc-252613/spring-boot-gke:v1
+          image:  gcr.io/anthos-poc-252613/spring-boot-gke:v2
           imagePullPolicy: Always
           readinessProbe:
             httpGet:
